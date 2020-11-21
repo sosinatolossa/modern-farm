@@ -29,7 +29,10 @@ console.log(yearlyPlan)
 
 
 
-
+// //this is a temporary code
+// //checking if plantSeeds is working from tractor.js module
+// import {plantSeeds} from "./tractor.js"
+// console.log("checkinggg",plantSeeds)
 
 
 
