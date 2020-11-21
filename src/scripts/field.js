@@ -9,7 +9,8 @@ export const addPlant = (seedObject) => {
 }
 
 
-
+//defininig a function and exporting it.
+//this function returns a copy array of emptyField
 export const usePlants = () => {
     return emptyField.slice()
 }
