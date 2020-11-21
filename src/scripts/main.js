@@ -6,6 +6,8 @@ console.log("Welcome to the main module")
 import {createPlan} from "./plan.js"
 const yearlyPlan = createPlan()
 
+
+console.log("this is the yearly plan")
 //we're console logging yearlyPlan
 console.log(yearlyPlan)
 
@@ -32,10 +34,9 @@ console.log(yearlyPlan)
 // //this is a temporary code
 // //checking if plantSeeds is working from tractor.js module
 // import {plantSeeds} from "./tractor.js"
-// console.log("checkinggg",plantSeeds)
+// const thePlantSeeds = plantSeeds(yearlyPlan)
 
-
-
+// console.log("checkinggg",thePlantSeeds)
 
 
 // //this is a temporary code
@@ -53,9 +54,6 @@ console.log(yearlyPlan)
 // addPlant(seed)
 // const theUsedPlants = usePlants()
 // console.log("checkinggggggg",theUsedPlants)
-
-
-
 
 
 /*
