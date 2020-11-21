@@ -7,9 +7,9 @@ import {createPlan} from "./plan.js"
 const yearlyPlan = createPlan()
 
 
-console.log("this is the yearly plan")
+
 //we're console logging yearlyPlan
-console.log(yearlyPlan)
+console.log("this is the yearly plan", yearlyPlan)
 
 
 
@@ -25,7 +25,10 @@ console.log(yearlyPlan)
 
 
 
-
+import {addPlant} from "./field.js"
+import {harvestPlants} from "./harvester.js"
+const theHarvestedPlants = harvestPlants(addPlant)
+console.log("this are the harvested plants", theHarvestedPlants)
 
 
 
