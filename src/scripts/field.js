@@ -5,7 +5,15 @@ const emptyField = []
 //it takes seed object as an input
 //then it adds the seed to emptyField 
 export const addPlant = (seedObject) => {
-    emptyField.push(seedObject)
+    if (Array.isArray(seedObject)) {
+        for (let i of seedObject) {
+            emptyField.push(i)
+        }
+    }
+    else {
+        emptyField.push(seedObject) 
+    }
+    return emptyField
 }
 
 
