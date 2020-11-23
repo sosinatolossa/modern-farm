@@ -1,3 +1,8 @@
+
+import {addPlant, usePlants} from "./field.js"
+import {plantSeeds} from "./tractor.js"
+import {harvestPlants} from "./harvester.js"
+
 //outputs a message
 console.log("Welcome to the main module")
 
@@ -24,12 +29,15 @@ console.log("this is the yearly plan", yearlyPlan)
 
 
 
+const thePlantSeeds = plantSeeds(yearlyPlan)
+// console.log("helloooooo", thePlantSeeds)
 
-import {addPlant} from "./field.js"
-import {harvestPlants} from "./harvester.js"
-const theHarvestedPlants = harvestPlants(addPlant)
-console.log("this are the harvested plants", theHarvestedPlants)
 
+const theUsedPlants = usePlants()
+console.log("this are the harvested plants", theUsedPlants)
+
+const theHarvestedPlant = harvestPlants(theUsedPlants)
+console.log("the harvested plant", theHarvestedPlant)
 
 
 

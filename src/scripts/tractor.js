@@ -6,37 +6,46 @@ import {createSoybean} from "./seeds/soybean.js"
 import {createSunflower} from "./seeds/sunflower.js"
 import {createWheat} from "./seeds/wheat.js"
 import {createCorn} from "./seeds/corn.js"
+import { addPlant } from "./field.js"
 
 
-const theAsparagusPlan = createAsparagus()
-const thePotatoPlan = createPotato()
-const theSoybeanPlan = createSoybean()
-const theSunflowerPlan = createSunflower()
-const theWheatPlan = createWheat()
-const theCornPlan = createCorn()
+
+
+
+
 
 //defining and exporting plantSeeds funtion
-export const plantSeeds = (plantingPlan) => {
-    for (let index = 0; index < 3; index++) {
-        for (let j = 0; j < 6; j++) {
-            if (plantingPlan[index][j] === "Asparagus") {
-                console.log("this is asparagus",j)
-            }
-            else if (plantingPlan[index][j] === "Potato") {
-                console.log("this is potato",j)
-            }
-            else if (plantingPlan[index][j] === "Soybean") {
-                console.log("this is yoybean",j)
-            }
-            else if (plantingPlan[index][j] === "Sunflower") {
-                console.log("this is sunflower",j)
-            }
-            else if (plantingPlan[index][j] === "Wheat") {
-                console.log("this is wheat",j)
-            }
-            else if (plantingPlan[index][j] === "Corn") {
-                console.log("this is corn",j)
-            }
-        }   
+export const plantSeeds = (plan) => {
+    const thePlantingPlan = plan.flat()
+    console.log("the plannnnnn", thePlantingPlan)
+    for (const seed of thePlantingPlan) {
+        // for (let index = 0; index < plantingPlan.length; index++) {
+        
+        //     for (let j = 0; j < plantingPlan[index].length; j++) {
+        if (seed === "Asparagus") {
+            const theAsparagusPlan = createAsparagus()
+            addPlant(theAsparagusPlan)
+        }
+        else if (seed === "Potato") {
+            const thePotatoPlan = createPotato()
+            addPlant(thePotatoPlan)
+        }
+        else if (seed === "Soybean") {
+            const theSoybeanPlan = createSoybean()
+            addPlant(theSoybeanPlan)
+        }
+        else if (seed === "Sunflower") {
+            const theSunflowerPlan = createSunflower()
+            addPlant(theSunflowerPlan)
+        }
+        else if (seed === "Wheat") {
+            const theWheatPlan = createWheat()
+            addPlant(theWheatPlan)
+        }
+        else if (seed === "Corn") {
+            const theCornPlan = createCorn()
+            addPlant(theCornPlan)
+        }
+           
     }
 }
