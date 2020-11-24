@@ -18,10 +18,7 @@ import { addPlant } from "./field.js"
 export const plantSeeds = (plan) => {
     const thePlantingPlan = plan.flat()
     console.log("the plannnnnn", thePlantingPlan)
-    for (const seed of thePlantingPlan) {
-        // for (let index = 0; index < plantingPlan.length; index++) {
-        
-        //     for (let j = 0; j < plantingPlan[index].length; j++) {
+    for (const seed of thePlantingPlan) {        
         if (seed === "Asparagus") {
             const theAsparagusPlan = createAsparagus()
             addPlant(theAsparagusPlan)
