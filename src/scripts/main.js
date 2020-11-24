@@ -14,7 +14,7 @@ const yearlyPlan = createPlan()
 
 
 //we're console logging yearlyPlan
-console.log("this is the yearly plan", yearlyPlan)
+// console.log("this is the yearly plan", yearlyPlan)
 
 
 
@@ -34,7 +34,7 @@ const thePlantSeeds = plantSeeds(yearlyPlan)
 
 
 const theUsedPlants = usePlants()
-console.log("this are the harvested plants", theUsedPlants)
+// console.log("this are the harvested plants", theUsedPlants)
 
 const theHarvestedPlant = harvestPlants(theUsedPlants)
 console.log("the harvested plant", theHarvestedPlant)
