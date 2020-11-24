@@ -2,6 +2,8 @@
 import {addPlant, usePlants} from "./field.js"
 import {plantSeeds} from "./tractor.js"
 import {harvestPlants} from "./harvester.js"
+import {cropsSold} from "./catalog.js"
+import {theListOfCropSold} from "./catalog.js"
 
 //outputs a message
 console.log("Welcome to the main module")
@@ -18,17 +20,6 @@ const yearlyPlan = createPlan()
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 const thePlantSeeds = plantSeeds(yearlyPlan)
 // console.log("helloooooo", thePlantSeeds)
 
@@ -36,10 +27,16 @@ const thePlantSeeds = plantSeeds(yearlyPlan)
 const theUsedPlants = usePlants()
 // console.log("this are the harvested plants", theUsedPlants)
 
-const theHarvestedPlant = harvestPlants(theUsedPlants)
-console.log("the harvested plant", theHarvestedPlant)
+const theHarvestedPlants = harvestPlants(theUsedPlants)
+//console.log("the harvested plant", theHarvestedPlants)
 
 
+
+// const theCropsSold = cropsSold()
+// console.log("this are the crops sold", theCropsSold)
+
+const listOfCropsSold = theListOfCropSold()
+// console.log("list of crops sold",listOfCropsSold)
 
 
 // //this is a temporary code

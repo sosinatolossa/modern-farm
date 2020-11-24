@@ -10,14 +10,10 @@ import { addPlant } from "./field.js"
 
 
 
-
-
-
-
 //defining and exporting plantSeeds funtion
 export const plantSeeds = (plan) => {
     const thePlantingPlan = plan.flat()
-    console.log("the plannnnnn", thePlantingPlan)
+    // console.log("the plannnnnn", thePlantingPlan)
     for (const seed of thePlantingPlan) {        
         if (seed === "Asparagus") {
             const theAsparagusPlan = createAsparagus()
@@ -42,7 +38,6 @@ export const plantSeeds = (plan) => {
         else if (seed === "Corn") {
             const theCornPlan = createCorn()
             addPlant(theCornPlan)
-        }
-           
+        }         
     }
 }

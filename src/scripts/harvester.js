@@ -14,6 +14,9 @@ export const harvestPlants = (thePlantsArray) => {
             }
         }
     }
+    // console.log("this is the harvested crops", cropsHarvested)
     return cropsHarvested
+    
 }
+
 
